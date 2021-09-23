@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrary;
+import java.util.Arrays;
 
 public class Main{
     public static void main(String[] args){
@@ -11,21 +11,24 @@ public class Main{
         int R1 = 0;
         
         A = sc.nextInt();
-        int [] R = new R[A]-1;
 
-        for(int i = 0;  i > A-1 ; i++){
+        for(int i = 0;  i  < A ; i++){
+            
+            
             H = sc.nextInt();
             W = sc.nextInt();
             M = sc.nextInt();
-            sc.close();
-
-            R1 = (M%H)*100;
-            R1 = R1 + (M/H +1);
-            R[i] = R1;
+            
+            
+            if(M % H == 0 ){
+                System.out.println((H*100) + (M / H));
             }
-        }
 
-        System.out.println(R[]);
+            else{
+                System.out.println(((M % H) * 100) + ((M / H ) +1));
+            }
 
+
+        }   
     }
 }
